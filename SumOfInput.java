@@ -8,6 +8,7 @@ public class SumOfInput
 {
     // instance variables - replace the example below with your own
     private Integer sum;
+    private Integer temp;
 
     /**
      * Constructor for objects of class SumOfInput
@@ -19,7 +20,11 @@ public class SumOfInput
     }
     
     public Integer oneToNumber(Integer numberToSum){
-
+        
+        sum = 0;
+        for(int i = 0;i<numberToSum+1;i++){
+            sum += i;
+        };
         return sum;
     }
 
